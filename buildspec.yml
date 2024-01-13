@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Starting build phase
+  build:
+    commands:
+      - echo Copying files to S3 bucket
+      - aws s3 cp . s3://cca7984hasitha/ --recursive --exclude "*" --include "css/*" --include "imgs/*" --include "js/*" --include "webfonts/*" --include "index.html"
+
+artifacts:
+  files:
+    - 'css/**/*'
+    - 'imgs/**/*'
+    - 'js/**/*'
+    - 'webfonts/**/*'
+    - 'index.html'
+  discard-paths: yes
