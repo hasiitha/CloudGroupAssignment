@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     </head>
     <body>
-        
+
         <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
             <div class="container">
                 <a class="navbar-brand" href="#"></a>
@@ -49,18 +49,18 @@
                 </div>
             </div>
         </nav>
-        
+
         <header id="home">
             <div class="overlay">
                 <div class="container">
                     <div>
-                        <h1><span>WebNimbus</span><br>Cloud Computing</h1>
+                        <h1><span>WebNimbus</span><br>Application of Cloud Computing </h1>
                         <p>Welcome to WebNimbus, where innovation meets reliability in the world of cloud computing. Our cutting-edge solutions empower businesses to thrive in the digital era.</p>
                     </div>
                 </div>
             </div>
         </header>
-        
+
         <div class="about-us" id="about">
             <div class="small-container">
                 <h2 class="text-center">Our <span>Services</span></h2>
@@ -100,7 +100,7 @@
                 <div class="second"></div>
             </div>
         </div>
-        
+
         <div class="services" id="service">
             <div class="container">
                 <h2 class="text-capitalize">Solutions <span></span></h2>
@@ -130,7 +130,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="contact" id="contact">
             <div class="violet-overlay">
                 <div class="container">
@@ -147,7 +147,7 @@
                 </div>
             </div>
         </div>
-        
+
         <footer>
             <div class="container">
                 <ul>
@@ -196,31 +196,31 @@
                 <p>Copyright 2019  Design by <a href="https://html.design">Free Html Templates</a></p>
             </div>
         </footer>
-        
+
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script>
             $(function () {
-                
+
                 'use strict';
-                
+
                 var winH = $(window).height();
-                
-                $('header').height(winH);  
-                
+
+                $('header').height(winH);
+
                 $('header .container > div').css('top', (winH / 2) - ( $('header .container > div').height() / 2));
-                
+
                 $('.navbar ul li a.search').on('click', function (e) {
                     e.preventDefault();
                 });
                 $('.navbar a.search').on('click', function () {
                     $('.navbar form').fadeToggle();
                 });
-                
+
                 $('.navbar ul.navbar-nav li a').on('click', function (e) {
-                    
+
                     var getAttr = $(this).attr('href');
-                    
+
                     e.preventDefault();
                     $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
                 });
